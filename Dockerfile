@@ -1,7 +1,7 @@
 # Docker image for springboot application
 
 ### 基础镜像，使用alpine操作系统，openjkd使用8u201
-FROM openjdk:16
+FROM openjdk:8
 
 #系统编码
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
