@@ -12,7 +12,7 @@ spring:
           filters:
             - StripPrefix=1
           uri: https://www.bilibili.com
-          #cookie的匹配
+        #cookie的匹配
         - id: cookie_route
           predicates:
             - Cookie=chocolate,ch.p
@@ -30,3 +30,10 @@ spring:
           uri: https://www.bilibili.com
           filters:
             - StripPrefix=1
+        #路径的匹配，StripPrefix代表信
+        - id: path_route3
+          predicates:
+            - Path=/c
+          filters:
+            - StripPrefix=1
+          uri: https://www.csdn.net/
